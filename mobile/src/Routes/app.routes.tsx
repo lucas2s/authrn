@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const { Navigator, Screen } = createStackNavigator();
 
-import Home from './Pages/Home';
+import Dashboard from '../Pages/Dashboard';
 
 
 export default function Routes() {
@@ -13,8 +13,8 @@ export default function Routes() {
     <NavigationContainer>
       <Navigator screenOptions={{ headerShown: false, cardStyle: { backgroundColor: '#f2f3f5'} }}>
         <Screen  
-          name="Home" 
-          component={Home} 
+          name="Dashboard" 
+          component={Dashboard} 
         />
       </Navigator>
     </NavigationContainer>
