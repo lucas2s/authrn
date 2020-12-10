@@ -2,9 +2,11 @@ import React from 'react';
 import { useFonts } from 'expo-font';
 import { Nunito_600SemiBold, Nunito_700Bold, Nunito_800ExtraBold } from '@expo-google-fonts/nunito'
 
+import { AuthProvider } from './src/Contexts/auth';
 import Routes from './src/Routes';
 
 export default function App() {
+
   const [ fontsLoaded ] = useFonts({
     Nunito_600SemiBold,
     Nunito_700Bold,
@@ -16,6 +18,8 @@ export default function App() {
   }
 
   return (
-    <Routes />
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   );
 }

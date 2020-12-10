@@ -11,7 +11,7 @@ import SignIn from '../Pages/SignIn';
 export default function Routes() {
   return (
     <NavigationContainer>
-      <Navigator screenOptions={{ headerShown: false, cardStyle: { backgroundColor: '#f2f3f5'} }}>
+      <Navigator screenOptions={{ headerShown: true, cardStyle: { backgroundColor: '#f2f3f5'} }}>
         <Screen  
           name="SignIn" 
           component={SignIn} 
